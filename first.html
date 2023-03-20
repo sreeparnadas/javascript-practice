@@ -1,0 +1,266 @@
+<script>
+
+    //1.
+    // let a = [];
+    // let b = [];
+    // console.log(a == b);
+    // console.log(a === b);
+
+    // output
+    // false
+    // when we compare two  arrays then the address of the array or the memory of the array compared 
+</script>
+
+
+
+<script>
+
+    //2.
+    // let a = [];
+    // let b = a;
+    // console.log(a == b);
+    // console.log(a === b);
+
+    // output
+    // true
+    // the memory address of a is copied to variable b. So they are sharing now same address and same value
+</script>
+
+
+
+<script>
+
+    //3.
+    // let a = [20];
+    // let b = [20];
+    // console.log(a[0] == b[0]);
+    // console.log(a[0] === b[0]);
+
+    // output
+    // true
+    // here elements compared, not memory compared
+</script>
+
+
+<script>
+
+    //4.
+    // let z = [1,2,3,4];
+    // let a = { name: "sreeparna" };
+    // console.log(z);
+    // console.log(...z);
+
+    // output
+    // 1 2 3 4
+    // triple dot convert array to string
+</script>
+
+
+<script>
+
+    //5. 
+    
+    // console.log(typeof NaN); //Not a number
+
+    // output
+    // 'number'
+    // In JavaScript, NaN is a number that is not a legal number. The Global NaN property is the same as the Number.Nan property.
+
+    // Number.isNaN(123);
+    // Number.isNaN(-1.23);
+    // Number.isNaN('123');
+    // Number.isNaN(0/0);
+</script>
+
+
+<script>
+
+    //6.
+    // let data = 10 - -10;
+    // console.log(data);
+
+    // output
+    // 20
+    //  minus and minus getting plus - mathematical situation
+</script>
+
+
+<script>
+
+    //7.
+    // const set = new Set([1, 1, 2, 3, 4]);
+    // console.log(set);
+
+    // output
+    // Set(4) {1, 2, 3, 4}
+    // Set eliminates duplicate elements
+</script>
+
+
+<script>
+
+    //8 .
+    // let data = { name: "javascript"};
+    // console.log(delete data.name);
+
+    // output
+    // true
+    // delete is actually deleting the object name property, and if the operation successful then it's return true
+
+
+    // console.log(data)
+    // return blank object
+</script> 
+
+
+<script>
+
+    //9 .
+    // let data = { name: "javascript"};
+    // console.log(delete data);
+
+    // output
+    // false
+    // We could not delete data directly
+</script> 
+
+
+<script>
+
+    //10 .
+    // const data = ["abc","def", "ghi"];
+    // const [y,z,w,x] = data;
+    // console.log(y,z,w,x);
+
+    // output
+    // abc
+    // if we add square bracket with a constant variable and assign an array then it will take the first element of from the ssigned array
+
+    // z = def, w = ghi and x will give undefined value
+</script> 
+
+
+<script>
+
+    //11 .
+    // const data = ["abc","def", "ghi"];
+    // how to get second value using y only, just add comma before y
+    // const [,y] = data;
+    // console.log(y);
+
+    // output
+    // def
+    // just add comma instead of putting extra variable in left side
+
+</script> 
+
+<script>
+
+    //12 . How to get name/age/skill property without dot operator
+    // const data = { name: "anil", age: 19, skill: "painting"};
+    // const {age} = data;
+    // console.log(age);
+
+ 
+    // output
+    // 19
+    // use braces with constant variable using name same as object property name
+
+</script> 
+
+
+<script>
+
+    //13 . Merge 2 objects
+    // let data = { name: "anil", age: 19, skill: "painting"};
+    // let info = { city: "kolkata", email: "anil@gmail.com"};
+    // data = {...data,...info};
+    // console.log(data);
+
+    // output
+    // {name: 'anil', age: 19, skill: 'painting', city: 'kolkata', email: 'anil@gmail.com'}
+    // data and info distracted using ...
+
+</script> 
+
+
+<script>
+
+    //14 .
+    // let data = { name: "anil", age: 19, skill: "painting"};
+    // let info = { city: "kolkata", email: "anil@gmail.com"};
+    // data = {data,...info};
+    // console.log(data);
+
+ 
+    // output
+    // {data: {…}, city: 'kolkata', email: 'anil@gmail.com'}
+    // 
+
+</script> 
+
+<script>
+
+    //15 . two skill property are there in two objects
+    // let data = { name: "anil", age: 19, skill: "painting"};
+    // let info = { city: "kolkata", skill: "playing"};
+    // data = {...data,...info};
+    // console.log(data);
+
+ 
+    // output
+    // {name: 'anil', age: 19, skill: 'playing', city: 'kolkata'}
+    // key position will remain same but the value will be next one
+
+</script> 
+
+
+<script>
+
+    //16 . 
+    // const name = "sree";
+    // console.log(name());
+ 
+    // output
+    // name is not a function
+
+</script> 
+
+<script>
+
+    //17 . 
+    // const name = "sree";
+    // console.log(name());
+ 
+    // output
+    // name is not a function
+
+</script> 
+
+
+<script>
+
+    //18 . 
+    // const result = false || {} || null;
+    //const result = false || null || {};
+    // console.log(result);
+ 
+    // output
+    // {}
+    // it finds the true value, first it false then {} it means positive value. Both will return {}
+
+</script> 
+
+
+<script>
+
+    //19 . 
+    const result = null || false || '';
+    console.log(result);
+ 
+    // output
+    // empty string  
+    // if both false then it will return last value
+    // '' it means actually false
+
+</script> 
